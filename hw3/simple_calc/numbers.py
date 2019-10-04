@@ -1,7 +1,8 @@
+from math import pi, e
 from simpleeval import simple_eval, NameNotDefined
 
-constants = {'pi': '3.14',
-             'e': '2.71'}
+constants = {'pi': str(pi),
+             'e': str(e)}
 
 
 def evaluate(expression):
