@@ -42,7 +42,11 @@ def evaluate_dates(dates, operation):
         try:
             result = operations[operation[i]](start_date, timedelta(days=dates[i]))
         except OverflowError:
-            return 'Numbers added/subtracted are to big'
+            result = 'Numbers added/subtracted are to big'
+            break
         start_date = result
 
-    return result.strftime('%Y-%m-%d')
+    if not isinstance(result, str):
+        result = result.strftime('%Y-%m-%d')
+
+    return result
