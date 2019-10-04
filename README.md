@@ -1,5 +1,9 @@
 ## Homework tasks from *Advanced Python* course by IT Hillel
 
+**hw4**<br>
+OOP system of choise.
+Soldier creation process based on [this](https://py.checkio.org/en/mission/army-units/) checkio task:
+
 **hw3**<br>
 Improve simple calculator:
 1. Split hw2 to modules
